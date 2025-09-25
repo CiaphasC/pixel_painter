@@ -8,31 +8,29 @@ namespace app {
 
 namespace {
 
-constexpr std::size_t kWidth = 21;
-constexpr std::size_t kHeight = 21;
+constexpr std::size_t kWidth = 17;
+constexpr std::size_t kHeight = 19;
 
 constexpr std::array<const char*, kHeight> kPattern = {
-    "WWWWWWWWWWWWWWWWWWWWW",
-    "WWWWGGWWWWWWWWWGGWWWW",
-    "WWWBGGBWWWWWWWBGGBWWW",
-    "WWBBBGGGGGGGGGGGBBBWW",
-    "WBBGGGGGGGGGGGGGGGBBW",
-    "WBBGGGGGGGGGGGGGGGBBW",
-    "WBBGGGBBGGGGGGBBGGBBW",
-    "WBBGGGBBGGGGGGBBGGBBW",
-    "WBBGGGGGGGGGGGGGGGBBW",
-    "WBBBBBBBBBBBBBBBBBBBW",
-    "WBBBBBBBBBBBBBBBBBBBW",
-    "WBBGGGGGGGGGGGGGGGBBW",
-    "WBBGGGGGGGGGGGGGGGBBW",
-    "WBBBGGGGGGGGGGGGBBBBW",
-    "WBBGBWWBWWBWWBWWBGBBW",
-    "WBBGBWWBWWBWWBWWBGBBW",
-    "WBBGBWWBWWBWWBWWBGBBW",
-    "WBBGBBBBBBBBBBBBBGBBW",
-    "WBBBBBBBBBBBBBBBBBBBW",
-    "WWWWWWWWWWWWWWWWWWWWW",
-    "WWWWWWWWWWWWWWWWWWWWW"
+    "WWWWWWWWWWWWWWWWW",  // 1 - Fondo
+    "WWWWGGWWWWWGGWWWW",  // 2 - Antenas superiores (L invertida)
+    "WWWBGGBWWWBGGBWWW",  // 3 - Antenas con base negra
+    "WWBBBGGGGGGGBBBWW",  // 4 - Cabeza superior con contorno
+    "WBBGGGGGGGGGGGBBW",  // 5 - Cabeza
+    "WBBGGGGGGGGGGGBBW",  // 6 - Cabeza
+    "WBBGGGBBGGGGBGGBBW", // 7 - Cabeza con ojos negros
+    "WBBGGGBBGGGGBGGBBW", // 8 - Cabeza con ojos negros
+    "WBBGGGGGGGGGGGBBW",  // 9 - Cabeza inferior
+    "WBBBBBBBBBBBBBBBW",  // 10 - Separación negra
+    "WBBBBBBBBBBBBBBBW",  // 11 - Separación negra
+    "WBBGGGGGGGGGGGBBW",  // 12 - Cuerpo superior
+    "WBBGGGGGGGGGGGBBW",  // 13 - Cuerpo
+    "WBBBGGGGGGGGGBBBW",  // 14 - Cuerpo inferior
+    "WBBGBWWBWWBWWBGBBW", // 15 - Boca con 5 dientes blancos
+    "WBBGBWWBWWBWWBGBBW", // 16 - Boca con 5 dientes blancos
+    "WBBGBWWBWWBWWBGBBW", // 17 - Boca con 5 dientes blancos
+    "WBBGBBBBBBBBBGBBW",  // 18 - Base con contorno
+    "WBBBBBBBBBBBBBBBW"   // 19 - Base negra
 };
 
 inline ColorId decode(char token) {

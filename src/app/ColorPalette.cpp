@@ -9,9 +9,9 @@ namespace {
 
 // Paleta unica para toda la aplicacion. Valores en formato RGB de 0 a 255.
 constexpr std::array<RgbColor, 3> kPalette{{
-    {245, 245, 245}, // Fondo claro para evitar el brillo puro del blanco.
-    {24, 24, 24},    // Contorno: negro profundo.
-    {164, 255, 0}    // Verde caracteristico del personaje.
+    {255, 255, 255}, // Fondo blanco puro como en la imagen.
+    {0, 0, 0},       // Contorno: negro puro para los ojos y contornos.
+    {173, 255, 47}   // Verde lima brillante del Android (LimeGreen).
 }};
 
 }  // namespace
